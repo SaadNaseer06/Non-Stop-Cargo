@@ -1,0 +1,320 @@
+/* General Section Styling */
+.mt-5 {
+    margin-top: 5rem;
+}
+
+.pt-lg-5 {
+    padding-top: 5rem;
+}
+
+.pb-5 {
+    padding-bottom: 5rem;
+}
+
+/* Hero Background Section */
+/* Hero Background Section */
+.hero_bg {
+    background-image: url(../img/hero-bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white; /* Set the text color to white for all content inside the hero banner */
+}
+
+/* Text Styling for Hero Section */
+.hero_bg h1,
+.hero_bg h2,
+.hero_bg h3,
+.hero_bg h4,
+.hero_bg p {
+    color: white; /* Ensures specific text elements like headings and paragraphs are white */
+}
+
+.footer-section {
+    padding: 100px 0px;
+}
+
+/* Contact Section Background */
+.con_bg {
+    background-image: url(../img/contact-bg.webp);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    padding: 4rem 0; /* Add vertical padding to make the content centered */
+}
+
+/* Text for the "Find your perfect home" Section */
+.find_txt h1 {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+/* Button Styling */
+.btn_1,
+.btn_2 {
+    padding: 20px 32px;
+    font-weight: bolder;
+    border: 3px solid #890191;
+    transition: 0.4s all;
+}
+
+.btn_1 {
+    color: #890191;
+    background: transparent;
+}
+
+.btn_1:hover {
+    background: #890191;
+    color: white;
+}
+
+.btn_2 {
+    color: white;
+    background: #890191;
+}
+
+.btn_2:hover {
+    background: transparent;
+    color: #890191;
+}
+
+.btn_3 {
+    background-color: #890191; /* Rich color for the button */
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn_3:hover {
+    background-color: #6b0b6d; /* Darker shade on hover */
+    transform: translateY(-5px); /* Slight upward movement on hover */
+}
+
+.btn_5 {
+    font-size: 20px !important;
+}
+
+/* Input and Form Styling */
+.form_bg {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    margin-bottom: 180px;
+}
+
+.form_bg input,
+.form_bg select {
+    background: transparent;
+    border: none;
+    padding: 10px;
+}
+
+.form_bg input:focus-visible {
+    outline: none;
+}
+
+.cus_drop {
+    border: none;
+    background: white;
+}
+
+.search_i {
+    background: #890191;
+    height: 51px;
+    display: flex;
+    align-items: center;
+    padding: 19px;
+    border-radius: 10px;
+    color: white;
+}
+
+/* Counter Section Styling */
+.ins_txt {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.plus_txt h3 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #890191;
+    margin-bottom: 10px;
+}
+
+.plus_txt p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-top: 0;
+}
+
+/* Map Box Styling */
+.map_box {
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Custom Border for Counter Section */
+.col-lg-6.custom-border {
+    border-right: 3px solid #890191;
+    border-top: 3px solid #890191;
+    border-bottom: 3px solid #890191;
+    padding: 30px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: #fff;
+}
+
+/* Hover Effects */
+.custom-border:hover {
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Location Section */
+.loc_txt {
+    color: #890191;
+}
+
+.loc_img img {
+    border-radius: 15px;
+}
+
+/* Icons Section */
+.part_i i {
+    background: #890191;
+    color: white;
+    height: 0px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    width: max-content;
+    padding: 14px;
+    padding-top: 26px;
+    padding-bottom: 26px;
+    border-radius: 50px;
+}
+
+/* Review Section */
+.rev_box {
+    border: 3px solid #890191;
+    border-radius: 15px;
+    padding: 30px;
+}
+
+.part_head h4,
+.load_1 h4 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.full_load label,
+.part_load label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.full_load input,
+.part_load input,
+.full_load select,
+.part_load select {
+    padding: 10px;
+}
+
+.foot_p {
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+.foot_i i {
+    font-size: 30px;
+    color: #890191; 
+    transition: all 0.3s ease; 
+}
+
+.foot_i i:hover {
+    transform: scale(1.1); 
+    cursor: pointer; 
+}
+
+.foot_i i:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 991px) {
+    .col-lg-6 {
+        margin-bottom: 2rem;
+    }
+
+    .ins_txt {
+        font-size: 2rem;
+    }
+
+    .plus_txt h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .find_txt h1 {
+        font-size: 1.8rem;
+    }
+
+    .btn_3 {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .loc_img {
+        text-align: center;
+    }
+
+    .cus_c {
+        text-align: center;
+    }
+
+    .part_i {
+        display: flex;
+        justify-content: center;
+    }
+
+    .think_txt {
+        font-size: 30px;
+    }
+
+    .fri_txt {
+        font-size: 18px;
+    }
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #7d009a;
+    border: #7d009a;
+}
+
+.btn-primary:hover {
+    background-color: #59036d;
+    border: #59036d;
+}
+
+
+/* Container for the text */
+.loc_txt h4 {
+    font-size: 1.8rem;
+    color: #333;
+    font-weight: bold;
+    text-align: center;
+}
