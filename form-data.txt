@@ -1,0 +1,12 @@
+{
+    "type": "Multi Axle Trailer",
+    "weight": "Above 30 MT",
+    "quantity": "5",
+    "origin": "New York",
+    "destination": "Los Angeles",
+    "material": "Building Materials",
+    "schedule_date": "2024-11-20",
+    "distance": "2500",  // Optional (calculated)
+    "time": "24 hours",  // Optional (calculated)
+    "customer_id": 12345
+}
