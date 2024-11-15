@@ -318,3 +318,106 @@
     font-weight: bold;
     text-align: center;
 }
+
+.first-row {
+    display: flex !important;
+    background: #0000009e;
+    padding: 40px;
+}
+.first-row .form-group {
+    width: 20%;
+}
+
+.first-row .form-group.text-center.mb-4.mt-3 {
+    align-self: flex-end;
+    margin-bottom: 1rem !important;
+}
+
+
+
+.second-row {
+    display: flex !important;
+    background: #0000009e;
+    padding: 40px;
+}
+.second-row .form-group {
+    width: 20%;
+}
+
+.second-row .form-group.text-center.mb-4.mt-3 {
+    align-self: flex-end;
+    margin-bottom: 1rem !important;
+}
+
+.third-row {
+    display: flex !important;
+    background: #0000009e;
+    padding: 40px;
+}
+.third-row .form-group {
+    width: 33.33%;
+}
+
+.third-row .form-group.text-center.mb-4.mt-3 {
+    align-self: flex-end;
+    margin-bottom: 1rem !important;
+}
+
+
+.fifth-row {
+    display: flex !important;
+    background: #0000009e;
+    padding: 40px;
+    margin-top: 40px;
+}
+.fifth-row .form-group {
+    width: 25%;
+}
+
+.fifth-row .form-group.text-center.mb-4.mt-3 {
+    align-self: flex-end;
+    margin-bottom: 1rem !important;
+}
+
+
+button.btn.btn-primary.btn_5.request {
+    margin-top: 10px;
+}
+
+.form-group.text-center.mb-4.mt-3.full-width {
+    width: 100%;
+}
+
+
+@media screen and (max-width: 580px) {
+    .first-row .form-group {
+        width: 100%;
+    }
+    .first-row {
+        padding: 10px;
+    }  
+    
+    .second-row .form-group {
+        width: 100%;
+    }
+    .second-row {
+        padding: 10px;
+    }  
+    .third-row {
+        padding: 10px;
+    }
+    .third-row .form-group {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .third-row .mb-3 {
+        margin-bottom: 0 !important;
+    }
+    .fifth-row {
+        padding: 20px;
+    }
+    .fifth-row .form-group {
+        width: 100%;
+        margin-bottom: 0 !important;
+    }
+}

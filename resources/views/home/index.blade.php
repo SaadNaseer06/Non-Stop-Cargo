@@ -275,70 +275,67 @@
 
                         <form action="{{ route('request.submit') }}" method="POST" class="mt-3" id="searchForm">
                             @csrf
-                            <div class="row mt-4">
-                                <div class="form-group col-lg-6">
+                            <div class="row mt-4 first-row">
+                                <div class="form-group col-lg-12">
                                     <div class=" mb-3">
                                         <label for="origin">Origin</label>
                                         <input type="text" name="origin" class="form-control mt-lg-4 mt-3"
                                             id="origin" placeholder="Enter Origin" required>
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <div class=" mb-3">
                                         <label for="destination">Destination</label>
                                         <input type="text" name="destination" class="form-control mt-lg-4 mt-3"
                                             id="destination" placeholder="Enter Destination" required>
                                     </div>
                                 </div>
-                            </div>
 
-                            <div class="row">
+                                <!-- Distance and Time fields on the same row -->
                                 <div class="form-group col-lg-6">
                                     <div class="">
-                                        <label for="get_distance">Distance(Readonly)</label>
+                                        <label for="get_distance">Distance (Readonly)</label>
                                         <input type="text" name="distance" class="form-control mt-lg-4 mt-3"
                                             id="get_distance" placeholder="Distance" readonly>
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-6">
                                     <div class="mb-3">
-                                        <label for="get_time">Time(Readonly)</label>
+                                        <label for="get_time">Time (Readonly)</label>
                                         <input type="text" name="time" class="form-control mt-lg-4 mt-3"
                                             id="get_time" placeholder="Time" readonly>
                                     </div>
                                 </div>
                                 <div class="form-group text-center mb-4 mt-3">
-                                    <button type="button" class="btn btn-danger distance btn_5">Get
-                                        Distance</button>
+                                    <button type="button" class="btn btn-danger distance btn_5">Get Distance</button>
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="form-group col-lg-6">
+                            <div class="row mt-4 second-row">
+                                <div class="form-group col-lg-12">
                                     <div class="">
                                         <label for="material">Material</label>
-                                        <select name="material" class="form-control  mt-lg-4 mt-3" id="material"
+                                        <select name="material" class="form-control mt-lg-4 mt-3" id="material"
                                             required>
                                             <option value="" disabled selected>Select Material</option>
                                             <option value="Auto Parts">Auto Parts</option>
-                                            <option value="Bardana jute or plastic">Bardana jute or plastic
-                                            </option>
+                                            <option value="Bardana jute or plastic">Bardana jute or plastic</option>
                                             <option value="Building Materials">Building Materials</option>
                                             <option value="Cement">Cement</option>
                                             <option value="Chemicals">Chemicals</option>
                                             <option value="Coal And Ash">Coal And Ash</option>
                                             <option value="Container">Container</option>
                                             <option value="Cotton seed">Cotton seed</option>
-                                            <option value="Electronics Consumer Durables">Electronics Consumer
-                                                Durables</option>
+                                            <option value="Electronics Consumer Durables">Electronics Consumer Durables
+                                            </option>
                                             <option value="Fertilizers">Fertilizers</option>
                                             <option value="Fruits And Vegetables">Fruits And Vegetables</option>
                                             <option value="Furniture And Wood Products">Furniture And Wood Products
                                             </option>
                                             <option value="House Hold Goods">House Hold Goods</option>
                                             <option value="Industrial Equipments">Industrial Equipments</option>
-                                            <option value="Iron sheets or bars or scraps">Iron sheets or bars or
-                                                scraps</option>
+                                            <option value="Iron sheets or bars or scraps">Iron sheets or bars or scraps
+                                            </option>
                                             <option value="Liquids in drums">Liquids in drums</option>
                                             <option value="Liquids/Oil">Liquids/Oil</option>
                                             <option value="Machinery new or old">Machinery new or old</option>
@@ -350,8 +347,8 @@
                                             <option value="Plastic Pipes or other products">Plastic Pipes or other
                                                 products</option>
                                             <option value="powder bags">powder bags</option>
-                                            <option value="Printed books or Paper rolls">Printed books or Paper
-                                                rolls</option>
+                                            <option value="Printed books or Paper rolls">Printed books or Paper rolls
+                                            </option>
                                             <option value="Refrigerated Goods">Refrigerated Goods</option>
                                             <option value="Rice or wheat or Agriculture Products">Rice or wheat or
                                                 Agriculture Products</option>
@@ -362,13 +359,12 @@
                                             </option>
                                             <option value="Vehicles or car">Vehicles or car</option>
                                         </select>
-
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <div class="">
                                         <label for="weight">Weight</label>
-                                        <select name="weight" class="form-control  mt-lg-4 mt-3" id="weight"
+                                        <select name="weight" class="form-control mt-lg-4 mt-3" id="weight"
                                             required>
                                             <option value="" disabled selected>Select Weight</option>
                                             <option value="Above 30 MT">Above 30 MT</option>
@@ -382,15 +378,12 @@
                                             <option value="Upto 7 MT">Upto 7 MT</option>
                                             <option value="Upto 9 MT">Upto 9 MT</option>
                                         </select>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mt-4">
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <div class=" mb-3">
                                         <label for="type">Truck Type</label>
-                                        <select name="type" class="form-control  mt-lg-4 mt-3" id="type"
+                                        <select name="type" class="form-control mt-lg-4 mt-3" id="type"
                                             required>
                                             <option value="" disabled selected>Select Type</option>
                                             <option value="Multi Axle Trailer">Multi Axle Trailer</option>
@@ -399,35 +392,34 @@
                                             <option value="Truck 20MT / 12 wheel">Truck 20MT / 12 wheel</option>
                                             <option value="Truck 21MT / 12 wheel">Truck 21MT / 12 wheel</option>
                                         </select>
-
                                     </div>
                                 </div>
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <div class=" mb-3">
                                         <label for="quantity">No. of Trucks</label>
-                                        <select name="quantity" class="form-control  mt-lg-4 mt-3" id="quantity"
+                                        <select name="quantity" class="form-control mt-lg-4 mt-3" id="quantity"
                                             required>
                                             <option value="" disabled selected>Select</option>
                                             @for ($i = 1; $i <= 10; $i++)
                                                 <option value="{{ $i }}">{{ $i }}</option>
                                             @endfor
                                         </select>
-
                                     </div>
                                 </div>
-                            </div>
-                            <div class="row mt-3">
-                                <div class="form-group col-lg-6">
+                                <div class="form-group col-lg-12">
                                     <div class=" mb-3">
                                         <label for="schedule_date">Schedule Date</label>
-                                        <input type="date" name="schedule_date" class="form-control  mt-lg-4 mt-3"
+                                        <input type="date" name="schedule_date" class="form-control mt-lg-4 mt-3"
                                             id="schedule_date" required>
                                     </div>
                                 </div>
+                                <button type="submit" class="btn btn-primary btn_5 request">Request</button>
                             </div>
-                            <div class="mt-4 text-center">
-                                <button type="submit" class="btn btn-primary btn_5">Request</button>
-                            </div>
+
+
+
+                            {{-- <div class="mt-4 text-center">
+                            </div> --}}
                         </form>
                     </div>
 
@@ -445,7 +437,7 @@
                         <form action="{{ route('request.submit.part') }}" method="POST" class="mt-3"
                             id="searchForm">
                             @csrf
-                            <div class="row text-start mt-4">
+                            <div class="row text-start mt-4 third-row ">
                                 <div class="form-group col-lg-6">
                                     <div class=" mb-3 ">
                                         <label for="origin">Origin</label>
@@ -460,9 +452,6 @@
                                             id="destination" placeholder="Enter Destination" required>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="row text-start">
                                 <div class="form-group col-lg-6">
                                     <div class="mb-3">
                                         <label for="get_distance">Distance(Readonly)</label>
@@ -477,12 +466,6 @@
                                             id="get_time" placeholder="Time" readonly>
                                     </div>
                                 </div>
-                                {{-- <div class="form-group text-end">
-
-                                </div> --}}
-                            </div>
-
-                            <div class="row text-start">
                                 <div class="form-group col-lg-6">
                                     <div class=" mb-3">
                                         <label for="source_pin">Soucre Pin Code</label>
@@ -498,15 +481,18 @@
                                             id="destination_pin" required>
                                     </div>
                                 </div>
-                                <div class="form-group text-center mb-4 mt-3">
-                                    {{-- <button type="button" class="btn btn-primary verify-pincode">Check
-                                        Pincode</button> --}}
-                                    <button type="button" class="btn btn-danger distance btn_5">Get
-                                        Distance</button>
+                                <div class="row text-start">
+                                    <div class="form-group text-center mb-4 mt-3 full-width">
+                                        {{-- <button type="button" class="btn btn-primary verify-pincode">Check
+                                            Pincode</button> --}}
+                                        <button type="button" class="btn btn-danger distance btn_5">Get
+                                            Distance</button>
+                                    </div>
                                 </div>
                             </div>
 
-                            <div class="row text-start">
+
+                            <div class="row text-start fifth-row">
                                 <div class="form-group col-lg-6">
                                     <div class=" mb-3">
                                         <label for="pickup_type">Pickup Type</label>
@@ -576,9 +562,6 @@
 
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="row mt-3 text-start">
                                 <div class="form-group col-lg-6">
                                     <div class=" ">
                                         <label for="weight">Weight</label>
@@ -596,7 +579,7 @@
                                             <option value="Upto 7 MT">Upto 7 MT</option>
                                             <option value="Upto 9 MT">Upto 9 MT</option>
                                         </select>
-
+    
                                     </div>
                                 </div>
                                 <div class="form-group col-lg-6">
@@ -606,10 +589,13 @@
                                             id="pickup_date" required>
                                     </div>
                                 </div>
+                                <button type="submit" class="btn btn-primary btn_5 request">Request</button>
+
                             </div>
+                            {{-- <div class="row mt-3 text-start">
+                            </div> --}}
 
                             <div class="mt-4">
-                                <button type="submit" class="btn btn-primary btn_5">Request</button>
                             </div>
                         </form>
 
@@ -964,8 +950,8 @@
                     </div>
                 </div>
             </div>
-            </div>
-        </section>
+    </div>
+    </section>
     </div>
     <!-- footer end -->
 
